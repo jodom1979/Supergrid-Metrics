@@ -1,0 +1,6 @@
+argocd app create my-application \
+  --repo https://github.com/jodom1979/Supergrid-Metrics.git \
+  --path . \
+  --dest-server https://8b002192-3f88-46ea-b6c6-fe26f7fe60b2.k8s.ondigitalocean.com \
+  --dest-namespace kube-system \
+  --revision dev
